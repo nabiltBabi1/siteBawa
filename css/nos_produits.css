@@ -1,0 +1,144 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    
+}
+
+/* la barre de navigation */
+
+.navbar {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../ressources/378faec21779d848f0b29606251e3f30.jpg");
+    margin-bottom: 0; 
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    
+}
+
+.navbar .nav-links ul li{
+    margin: 0 70px;
+    background-color: black;
+    padding: 12px;
+}
+
+.navbar a {
+    color: rgb(255, 211, 26);
+    font-size: 40px;
+    font-weight: 600; 
+}
+
+.navbar .logo_bawa {
+    width: 220px;
+}
+
+/* centre */
+
+
+
+
+.links_products {
+    background-color: rgb(255, 211, 26);
+    margin-top: 0;
+}   
+
+.links_products ul {
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+.links_products ul li {
+    background-color: black;
+    color: rgb(189, 0, 0);
+    font-size: 30px;
+    font-weight: 600;
+    padding: 10px;
+    margin: 1%;
+}
+
+.links_products ul li:hover {
+    cursor: pointer;
+}
+
+
+#cartes {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-gap: 20px;
+    padding-top: 50px;
+    padding-bottom: 200px;
+    padding-left: 50px;
+}
+
+.burgers, .sandwishs, .tacos, .accompagnements, .desserts{
+    display: none;
+}
+
+.menus, .burgers, .sandwishs, .tacos, .accompagnements, .desserts{
+    border: 2px solid #000000;
+    padding: 10px;
+    width: 100%;
+    max-width: 250px;
+}
+
+.menus h2, .burgers h2, .sandwishs h2, .tacos h2, .accompagnements h2, .desserts  h2{
+    border: 2px solid #000000;
+    margin-bottom: 10px;
+}
+
+.menus p, .burgers p, .sandwishs p, .tacos p, .accompagnements p, .desserts p{
+    border: 2px solid #000000;
+}
+
+.menus img, .burgers img, .sandwishs img, .tacos img, .accompagnements img, .desserts img{
+    width: 220px;
+    height: 200px;
+    object-fit: cover;
+}
+
+/* bas de page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../ressources/378faec21779d848f0b29606251e3f30.jpg");
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 40px; /* Ajout de la marge supérieure */
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li{
+    margin: 0 150px;
+    padding: 3px;
+}
+
+footer a img{
+    color: rgb(255, 211, 26);
+    width:  50px;
+    height: 50px;
+    border-radius: 20%;
+}

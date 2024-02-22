@@ -1,0 +1,46 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    
+}
+
+.navbar {
+    position: absolute;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: rgb(199, 0, 0);
+}
+
+.navbar a {
+    color: rgb(255, 211, 26);
+    font-size: 40px;
+    font-weight: 600;
+    
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    
+}
+
+.navbar .nav-links ul li{
+    margin: 0 40px;
+    background-color: black;
+  
+    padding: 12px;
+}
+
+.navbar .logo_bawa {
+    width: 220px;
+}
+

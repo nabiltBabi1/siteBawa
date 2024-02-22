@@ -1,0 +1,190 @@
+*, ::before, ::after {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+
+body {
+    font-family: 'Poppins', 'Courier New', Courier, monospace;
+    background-image: url("https://i.pinimg.com/736x/a6/21/6e/a6216eb07f5871a10dc696e7494c80c6.jpg");
+    background-size: cover;
+}
+
+/* la barre de navigation */
+
+.navbar {
+    display: flex;
+    padding: 50px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    box-sizing: border-box;
+    background-image: url("../ressources/378faec21779d848f0b29606251e3f30.jpg");
+    margin-bottom: 50px;
+}
+
+.navbar .nav-links ul {
+    display: flex;
+    
+}
+
+.navbar .nav-links ul li{
+    margin: 0 70px;
+    background-color: #000000;
+    padding: 35px;
+    border-radius: 100%;
+    border: 3px solid black;
+}
+
+
+.navbar a {
+    color: rgb(255, 211, 26);
+    font-size: 30px;
+    font-weight: 600; 
+    text-shadow: #000000 2px 2px, #000000 -2px 2px, #000000 -2px -2px, #000000 2px -2px;
+}
+
+.navbar .logo_bawa {
+    width: 220px;
+}
+
+/* le centre */
+
+main {
+    width: 30%;
+    margin: auto;
+    
+}
+
+
+.diapo {
+    margin-top: 10%;
+    margin-bottom: 50%;
+    position: relative;
+    overflow: hidden;
+}
+
+#nav-gauche, #nav-droite {
+    position: absolute;    
+    top: 50%;
+    transform: translateY(-50%);
+    color: rgb(255, 211, 26);
+    font-size: 3em;
+}
+
+#nav-gauche {
+    left: 20px;
+}
+
+#nav-droite {
+    right: 20px;
+}
+
+#nav-gauche:hover {
+    cursor: pointer;
+}
+
+#nav-droite:hover {
+    cursor: pointer;
+}
+
+.elements {
+    display: flex;
+    transition: 1s linear;
+}
+
+.element {
+    flex: 1 0 100%;
+    position: relative;
+}
+
+.element > img {
+    width: 100%;
+}
+
+/* bas de page */
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("../ressources/378faec21779d848f0b29606251e3f30.jpg");
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    margin-top: 40px;
+}
+
+footer ul {
+    display: flex;
+}
+
+footer ul li{
+    margin: 0 150px;
+    padding: 4px;
+    
+    
+}
+
+footer a img{
+    color: rgb(255, 211, 26);
+    width:  50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+@media screen and (max-width: 1700px) {
+    .navbar a {
+        font-size: 30px;
+    }
+    
+    .navbar .logo_bawa {
+        width: 150px;
+    }
+
+    footer ul li{
+        margin: 0 100px;
+    }
+}
+
+@media screen and (max-width: 1400px) {
+    .navbar a {
+        font-size: 25px;
+    }
+    
+    
+}
+
+@media screen and (max-width: 1275px) {
+    .navbar a {
+        font-size: 18px;
+    }
+
+    .navbar .logo_bawa {
+        width: 140px;
+    }
+    .navbar .nav-links ul li{
+        padding: 10x;
+    }
+    footer ul li{
+        margin: 0 75px;
+    }
+}
+
+@media screen and (max-width: 1110px) {
+    .navbar .nav-links {
+        display: none;
+    }
+
+    
+}
+
+@media screen and (max-width: 1000px) {
+
+}
